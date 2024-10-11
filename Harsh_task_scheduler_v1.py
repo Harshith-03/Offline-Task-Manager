@@ -36,7 +36,7 @@ def save_tasks(tasks):
 def add_task_gui():
     title = title_entry.get()
     description = desc_entry.get()
-    deadline_date = date_entry.get_date()  # Use the DateEntry picker
+    deadline_date = date_entry.get_date()  
     hour = hour_entry.get()
     minute = minute_entry.get()
     
@@ -175,8 +175,8 @@ screen_height = app.winfo_screenheight()
 app.geometry(f"{screen_width}x{screen_height}+0+0")
 
 # Set a theme (adjust based on preferences)
-ctk.set_appearance_mode("light")  # Choose between "light", "dark", or "system"
-ctk.set_default_color_theme("blue")  # Can use "blue", "dark-blue", or "green"
+ctk.set_appearance_mode("light")  
+ctk.set_default_color_theme("blue")  
 
 # Font settings
 font_large = ("Helvetica", 18, "bold")
@@ -184,10 +184,10 @@ font_medium = ("Helvetica", 14)
 font_small = ("Helvetica", 12)
 
 # Layout colors and style
-bg_color = "#f0f0f0"  # Light background for the overall app
-button_color = "#333333"  # Dark button color
-text_color = "#ffffff"  # Button text color
-box_bg_color = "#d9d9d9"  # Light gray for task boxes
+bg_color = "#f0f0f0"  
+button_color = "#333333"  
+text_color = "#ffffff"  
+box_bg_color = "#d9d9d9"  
 
 app.configure(bg=bg_color)
 
